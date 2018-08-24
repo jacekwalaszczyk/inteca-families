@@ -1,6 +1,14 @@
 version: '3'
 services:
-  client:
+  nginx:
     build: client/.
     ports:
       - "80:80"
+    depends_on: 
+      - spring
+  spring:
+    build: server/.
+    depends_on:
+      - db
+  db:
+    build: db/.
