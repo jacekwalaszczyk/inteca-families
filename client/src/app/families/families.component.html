@@ -1,0 +1,8 @@
+<h2>Stored families</h2>
+  <ul class="families">
+    <li *ngFor="let father of fathers">
+      <a routerLink="{{familyDetailPath}}{{father.id}}">
+        <span class="badge">{{father.id}}</span> {{father.firstName}} {{father.secondName}}
+      </a>
+    </li>
+  </ul>

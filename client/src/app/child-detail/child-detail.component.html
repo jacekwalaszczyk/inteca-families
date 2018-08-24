@@ -1,0 +1,13 @@
+<div *ngIf="child">
+  <h3>Details of a child <br> {{child.firstName | uppercase}} {{child.secondName | uppercase}}:</h3>
+  <div><span>First name: </span>{{child.firstName}}</div>
+  <div><span>Second name: </span>{{child.secondName}}</div>
+  <div><span>Birth date: </span>{{child.birthDate}}</div>
+  <div><span>PESEL: </span>{{child.pesel}}</div>
+  <div><span>Sex: </span>{{sexName}}</div>
+  <br>
+  <button *ngIf="true" (click)="hideDetails()" class="hide-details-btn">
+    Hide details
+ </button>
+</div>
+

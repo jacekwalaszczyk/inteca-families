@@ -1,0 +1,54 @@
+<h2>Search families</h2>
+<div class="forms">
+  <form>
+    <h3>Enter data of the child:</h3>
+    <div class='inputfield'>
+      <label>First name:
+      </label>
+      <input [(ngModel)]="childData.firstName" [ngModelOptions]="{standalone: true}"/>
+    </div>
+    <div class='inputfield'>
+      <label>Second name:
+      </label>
+      <input [(ngModel)]="childData.secondName" [ngModelOptions]="{standalone: true}"/>
+    </div>
+    <div class='inputfield'>
+      <label>Birth date:
+      </label>
+      <input type="date" [(ngModel)]="childData.birthDate" [ngModelOptions]="{standalone: true}"/>
+    </div>
+    <div class='inputfield'>
+      <label>pesel:
+      </label>
+      <input [(ngModel)]="childData.pesel" [ngModelOptions]="{standalone: true}"/>
+    </div>
+    <div class='inputfield'>
+      <label>Płeć:
+      </label>
+      <select [(ngModel)]="childData.sex" [ngModelOptions]="{standalone: true}">
+        <option selected value="M">Male</option>
+        <option value="F">Female</option>
+      </select>
+    </div>
+    <button (click)="searchChildren()">
+      Search families
+    </button>
+  </form>
+<div *ngIf="ids.length > 0" class="children-list">
+  <h3>Found families (fathers): </h3>
+  <table class="families-table" border="1">
+    <tr>
+      <th>First name</th>
+      <th>Second name</th>
+      <th>Birth date</th>
+      <th>pesel</th>
+    </tr>
+    <tr class="data" *ngFor="let father of fathers" (click)="goToFatherDetails(father.id)">
+      <td>{{ father.firstName }}</td>
+      <td>{{ father.secondName }}</td>
+      <td>{{ father.birthDate }}</td>
+      <td>{{ father.pesel }}</td>
+    </tr>
+  </table>    
+</div>
+</div>

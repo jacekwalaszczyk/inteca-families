@@ -1,0 +1,56 @@
+label {
+    display: block;
+    margin: .5em 0;
+    color: #607D8B;
+    font-weight: bold;
+  }
+input {
+  height: 2em;
+  font-size: 1em;
+  padding-left: .4em;
+}
+.inputfield {
+    margin-bottom: 1.5em;
+}
+h3 {
+  font-size: 1.4em;
+  text-align: left; 
+  margin-bottom: 0;
+  color: red;
+}
+button {
+  max-width: 240px;
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer; cursor: hand;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}
+
+.forms {
+  display: flex;
+  flex-flow: row;
+  margin-bottom: 64px;
+}
+
+.forms form {
+  margin-right: 48px;
+}
+
+.store-family-btn {
+  margin: auto;
+}
+
+.error-msg {
+  margin-bottom: 8px;
+  color: red;
+}

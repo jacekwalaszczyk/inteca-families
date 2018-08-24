@@ -1,0 +1,11 @@
+<div *ngIf="father">
+  <h2>Children</h2>
+  <ul class="children">
+    <li *ngFor="let child of children; let i = index">
+      <a (click)="detailClicked(child.pesel)">
+        <span class="badge">{{i+1}}</span>{{child.firstName}} {{child.secondName}}
+      </a>
+    </li>
+  </ul>
+</div>
+

@@ -1,0 +1,8 @@
+<h2>Current family</h2>
+<div *ngIf="familyContent">
+  <div><span>ID: </span>{{familyContent.family.id}}</div>
+  <app-father-detail></app-father-detail>
+  <app-children></app-children>
+  <app-child-detail></app-child-detail>
+  <button (click)="goBack()">go back</button>
+</div>

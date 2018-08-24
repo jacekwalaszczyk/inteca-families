@@ -1,0 +1,35 @@
+label {
+    display: block;
+    margin: .5em 0;
+    color: #607D8B;
+    font-weight: bold;
+  }
+
+h3 {
+  font-size: 1.2em;
+  text-align: left; 
+  margin-bottom: 8;
+  color: red;
+}
+button {
+  max-width: 240px;
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer; cursor: hand;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}
+
+.hide-details-btn {
+  margin: auto;
+}
+
