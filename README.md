@@ -1,6 +1,6 @@
 # Inteca Families
 
-**Inteca Familes** is a distributed application based on Angular, Sprig Boot and MySql.
+**Inteca Familes** is a distributed application based on Angular, Spring Boot and MySql.
 It has been written as a evaluation task for a Java Developer position.
 The purpose of this application is to serve as an archive of families.
 
@@ -62,7 +62,7 @@ This is caused by busy/blocked 80 port which is used for communication from the 
 ```
 docker-compose down
 ```
-and additionally, restart the Docker itself - the restart option is in the right mouse button menu of Docker's process icon. After that run the **_docker-compose up_** command again.
+and additionally, restart the Docker itself - the restart option is in the right mouse button menu of Docker's process icon. After that, run the **_docker-compose up_** command again.
 When everything went right you should get the following message on the command line window:
 
 ```
